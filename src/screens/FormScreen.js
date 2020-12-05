@@ -3,7 +3,7 @@ import { StyleSheet, View, Image, ScrollView } from "react-native";
 import { InputRegister, PickRegister } from "../components/FormRegister";
 import Button from "../components/Button";
 
-const FormScreen = () => {
+const FormScreen = ({ navigation }) => {
   return (
     <View style={style.parentView}>
       <ScrollView>
@@ -20,12 +20,17 @@ const FormScreen = () => {
           </View>
         </View>
         <View style={style.parentFormView}>
+          <InputRegister title="Nama" placeholder="Masukan Nama Anda" />
           <InputRegister title="Umur" placeholder="Masukan Umur Anda" />
-          <InputRegister title="Nama" placeholder="Masukan Umur Anda" />
           <PickRegister title="Gender" />
         </View>
         <View style={style.button}>
-          <Button title="Lanjutkan" />
+          <Button
+            title="Lanjutkan"
+            onPress={() => {
+              navigation.navigate("Home");
+            }}
+          />
         </View>
       </ScrollView>
     </View>

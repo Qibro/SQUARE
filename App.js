@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 import HomeScreen from "./src/screens/HomeScreen";
+import FormScreen from "./src/screens/FormScreen";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 
