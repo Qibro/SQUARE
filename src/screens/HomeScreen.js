@@ -19,17 +19,11 @@ const DATA = [
     src: require("../../assets/FeverIcon.png"),
   },
   {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-    title: "Second Item",
-    desc: "Batuk kering",
-    src: require("../../assets/CoughIcon.png"),
-  },
-  {
     id: "58694a0f-3da1-471f-bd96-145571e29d72",
     title: "Kelelahan",
     desc:
       "Badan terasa lesu dan lelah walaupun tidak melakukan aktifitas yang berat",
-    src: require("../../assets/FeverIcon.png"),
+    src: require("../../assets/CoughIcon.png"),
   },
 ];
 

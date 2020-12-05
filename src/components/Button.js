@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 
-const Button = ({ title, onPress }) => {
+const Button = ({ title, onPress, cusStyle }) => {
   return (
     <TouchableOpacity style={style.parentView} onPress={onPress}>
       <Text style={style.text}>{title}</Text>
